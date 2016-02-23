@@ -1,0 +1,134 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#header .top-logo {
+		text-align: center;
+		padding-top: 20px;
+	}
+	#header #right-top-nav {
+		float: none;
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+		overflow: hidden;
+	}
+	#header #right-top-nav .nav-pills {
+		display: inline-block;
+	}
+	#header #right-top-nav ul.nav > li > span {
+		font-size: 16px;
+	}
+	#header #right-top-searchbox {
+		float: none;
+	}
+	#header #right-top-searchbox input.searchbox, #header #right-top-searchbox input.search-suggest {
+		width: 100%;
+		padding: 5px 10px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.menu {
+		background: #19b7f1;
+	}
+	.menu_wrap {
+		float: none;
+	}
+	.menu_wrap ul {
+		margin: 0px;
+		padding: 0px;
+	}
+	.menu .active {
+		background: #19b7f1;
+		border-bottom: none;
+		color: #fff;
+	}
+	.menu .active a {
+		background: #49c6f4;
+  		background: rgba(255, 255, 255, 0.2);
+  		border-left: 0px;
+  		color: #fff;
+	}
+	.menu li a:hover, .menu li:hover > a {
+	    background: #19b7f1;
+	    color: #fff;
+	    border-left: none;
+	}
+	.menu li a {
+		color: #fff;
+		background: #19b7f1;
+		border-left: 0px;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.produkt-wp .col-xs-6 {
+    	float: none;
+    	margin: 0 auto;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
