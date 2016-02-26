@@ -85,6 +85,7 @@ h2 {
 
 header#header {
 	padding-top: 20px;
+  
 	width: 100%;
     border-top: 3px solid $accent-color;
     
@@ -567,8 +568,8 @@ width:100%;}
 }
 .produkt-wp .produkt-item img{
   display: block;
-  width: 350px;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
    
   margin: 0 auto;
 }
@@ -1854,6 +1855,7 @@ z-index:11;
 .right-nav .vertical-left-menu li {
   border-bottom: 1px solid #eee;
   margin: 0;
+   list-style-type: none;
 }
 .right-nav .vertical-left-menu li a {
   border-radius: 0;
@@ -1861,7 +1863,8 @@ z-index:11;
   font-weight: 400;
 }
 .right-nav .vertical-left-menu li a:hover {
-  background-color: rgba(25, 183, 241, 0.07);
+   background-color: $accent-color;
+   color: #fff;
 }
 .right-nav .vertical-left-menu li.active a,
 .right-nav .vertical-left-menu li.active a:hover,
@@ -1870,12 +1873,12 @@ z-index:11;
   color: #fff;
   background-color: $accent-color;
 }
-.right-nav .nav > li > a {
+.right-nav .nav  li  a {
     position: relative;
     display: block;
     padding: 10px 15px;
 }
-.right-nav .nav-stacked > li {
+.right-nav .nav-stacked  li {
     float: none;
 }
 
@@ -1888,6 +1891,7 @@ z-index:11;
 
 .products li{
   display: block;
+  max-width: 180px;
   float: left;
   margin-left: 0px !important;
   margin-right: 30px;
@@ -1895,7 +1899,7 @@ z-index:11;
 }
 .products img{
   display: block;
-  max-width: 150px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1962,4 +1966,30 @@ z-index:11;
 }
 .woocommerce-breadcrumb{
   margin-bottom: 25px;
+}
+
+.images img{
+  max-width: 100% !important;
+}
+
+.add_to_cart_button, .single_add_to_cart_button{
+  display: block;
+  padding: 5px 20px;
+  background: $accent-color;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+   transition: 0.5s;
+   margin-bottom: 15px;
+   border: none;
+
+
+}
+.add_to_cart_button:hover, .single_add_to_cart_button:hover{
+   background: darken($accent-color, 20%);
+  color: #fff;
+  text-decoration: none;
 }

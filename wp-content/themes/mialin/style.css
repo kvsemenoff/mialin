@@ -514,8 +514,8 @@ header#header {
 
 .produkt-wp .produkt-item img {
   display: block;
-  width: 350px;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto; }
 
 .produkt-wp .produkt-hover {
@@ -1926,7 +1926,8 @@ footer address dl dd {
 
 .right-nav .vertical-left-menu li {
   border-bottom: 1px solid #eee;
-  margin: 0; }
+  margin: 0;
+  list-style-type: none; }
 
 .right-nav .vertical-left-menu li a {
   border-radius: 0;
@@ -1934,7 +1935,8 @@ footer address dl dd {
   font-weight: 400; }
 
 .right-nav .vertical-left-menu li a:hover {
-  background-color: rgba(25, 183, 241, 0.07); }
+  background-color: #f39c12;
+  color: #fff; }
 
 .right-nav .vertical-left-menu li.active a,
 .right-nav .vertical-left-menu li.active a:hover,
@@ -1943,12 +1945,12 @@ footer address dl dd {
   color: #fff;
   background-color: #f39c12; }
 
-.right-nav .nav > li > a {
+.right-nav .nav li a {
   position: relative;
   display: block;
   padding: 10px 15px; }
 
-.right-nav .nav-stacked > li {
+.right-nav .nav-stacked li {
   float: none; }
 
 .products {
@@ -1958,13 +1960,14 @@ footer address dl dd {
 
 .products li {
   display: block;
+  max-width: 180px;
   float: left;
   margin-left: 0px !important;
   margin-right: 30px; }
 
 .products img {
   display: block;
-  max-width: 150px;
+  max-width: 100%;
   height: auto; }
 
 .clear {
@@ -2023,5 +2026,27 @@ footer address dl dd {
 
 .woocommerce-breadcrumb {
   margin-bottom: 25px; }
+
+.images img {
+  max-width: 100% !important; }
+
+.add_to_cart_button, .single_add_to_cart_button {
+  display: block;
+  padding: 5px 20px;
+  background: #f39c12;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  border: none; }
+
+.add_to_cart_button:hover, .single_add_to_cart_button:hover {
+  background: #976008;
+  color: #fff;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

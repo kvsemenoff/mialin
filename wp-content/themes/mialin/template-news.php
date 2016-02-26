@@ -32,24 +32,7 @@ Template Name: Новости
 						<div class="heading"> 
 						  <h4>Навигация</h4>
 						</div>
-						<ul class="nav nav-pills nav-stacked vertical-left-menu">
-							<?php
-							$args = array( 'child_of' => $current_term->term_id, 'orderby' => 'name', 'order' => 'ASC' );
-							$terms = get_terms( 'product_cat', $args );
-							$count = count($terms);
-							 if($count > 0){
-							    $i=0;
-							    foreach ($terms as $term) {
-							    	$cls = '';
-									if ($i==0) {
-									    $cls = ' class="active"';
-									}else{$cls="";}     	
-							    	echo '<li '.$cls.'><a href="'.$term->taxonomy.'='.$term->slug.'"><i class="fa fa-angle-right"></i>'.$term->name.'</a></li>';
-							      	$i++;
-							    }
-							}
-							?>
-						</ul>
+						<?php echo do_shortcode('[product_categories_list]'); ?>
 					</div>
 				</div>
 			</div>
